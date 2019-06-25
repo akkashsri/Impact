@@ -1,0 +1,390 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="logo.png">
+	<script src="navbar.js"></script>
+<link rel="stylesheet" type="text/css"
+href="navbar.css">
+<title>Impact-Career Counselling
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	.img1{
+		width: 400px;
+		height: 300px;
+		border: solid 5px black;
+		border-radius: 15px;
+		box-shadow: 5px 5px;
+	}
+	h3{
+		font-weight: bold;
+	}
+	.footer3 {
+    width: 1348px;
+    max-height: 300px;
+    background-color: grey;
+    border-top: solid 5px #ff3300;
+  }
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 9;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+   border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+  * {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0066ff;
+  color: white;
+  line-height: 30px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+   font-weight: bold;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 250px;
+  height: 30px;
+  z-index: 99;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   background-color: #0066ff;
+  z-index: 99;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width:350px;
+  padding: 10px;
+  background-color: white;
+  background-color: #0066ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 500px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+
+.in{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+a.ex1:hover, a.ex1:active {color: orange;}
+</style>
+</head>
+<body style="margin-left:0; margin-top: 9%; ">
+<div id="navbar">
+<a href="index.html" style="float:left;"><img src="images3.jpeg" style="height:75px;width:300px;"></a>	
+<div style="font-family: Verdana; font-size: 120%; float: right;">
+  <a href="index.html">Home</a>
+  <a href="guide.html">Career Guide</a>
+  <a href="parent1.html">Parents</a>
+  <a href="contact.html">Contact</a>
+  <a href="signup.html">Sign up</a>
+  <a href="test.html">Career Tests</a>
+  <a href="login.html">Login Through</a>
+</div>
+</div>
+<div class="customer open-button" onclick="openForm()">&nbsp;&nbsp;Customer Support</div>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <span style="color: white;"><h1>Customer Support</h1>
+
+Please leave your details below & we'll get back. Meanwhile explore our personalised Career Counselling Plans</span>
+<input type="text" name="name" required placeholder="*Name" class="in">
+<input type="text" name="email" required placeholder="*Email"  class="in">
+    <textarea placeholder="*Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div style="margin: 0% 20% 0% 20%">
+	<h1>How to Make a Career Choice When You Are Undecided</h1>
+	<p>8 Steps to Choosing a Career</p>
+	<h4>BY DAWN ROSENBERG MCKAY  Updated April 19, 2018</h4>
+	<p>With thousands of options, how will you pick a career that's right for you? If you don't have any idea what you want to do, the task may seem insurmountable. Fortunately, it isn't. Put enough thought into it, and you will increase your chances of making a good decision.</p><br><br>
+	<h3>01  Assess Yourself</h3>
+	<img src="img1.jpg" class="img1">
+	<p>Before you can choose the right career, you must learn about yourself. Your values, interests, soft skills, and aptitudes, in combination with your personality type, make some occupations a good fit for you and others completely inappropriate.<br>
+
+Use self-assessment tools, often called career tests, to gather information about your traits and, subsequently generate a list of occupations that are a good fit based on them. Some people choose to work with a career counselor or other career development professionals who can help them navigate this process.</p><br><br>
+
+    <h3>02  Make a List of Occupations to Explore</h3>
+    <img src="img2.jpg" class="img1">
+    <p>You probably have multiple lists of occupations in front of you at this point-one generated by each of the self-assessment tools you used. To keep yourself organized, you should combine them into one master list.<br>
+
+First, look for careers that appear on multiple lists and copy them onto a blank page. Title it "Occupations to Explore." Your self-assessment indicated they are a good fit for you based on several of your traits, so definitely consider them.<br>
+
+Next, find any occupations on your lists that appeal to you. They may be careers you know a bit about and want to explore further. Also, include professions about which you don't know much. You might learn something unexpected. Add those to your master list.
+
+</p><br><br>
+<h3>03  Explore the Occupations on Your List</h3>
+<img src="img3.jpg" class="img1">
+<p>Now get some basic information about each of the occupations on your list. You will be thrilled you managed to narrow your list down to only 10 to 20 options! <br>
+
+Find job descriptions and educational, training and licensing requirements in published sources. Learn about advancement opportunities. Use government-produced labor market information to get data about earnings and job outlook.</p><br><br>
+
+<h3>04  Create a "Short List"</h3>
+<img src="img4.jpg" class="img1">
+<p>At this point, start to narrow down your list even more. Based on what you learned from your research so far, begin eliminating the careers you don't want to pursue any further. You should end up with fewer than two to five occupations on your "short list."<br>
+
+If your reasons for finding a career unacceptable are non-negotiable, cross it off your list. Remove everything with duties that don't appeal to you. Eliminate careers that have weak job outlooks. Get rid of any occupation if you are unable to or unwilling to fulfill the educational or other requirements, or if you lack some of the soft skills necessary to succeed in it.</p><br><br>
+
+<h3>05  Conduct Informational Interviews</h3>
+<img src="img5.jpg" class="img1">
+<p>When you have only a few occupations left on your list, start doing more in-depth research. Arrange to meet with people who work in the occupations in which you are interested. They can provide firsthand knowledge about the careers on your short list. Access your network, including LinkedIn, to find people with whom to have these informational interviews.</p><br><br>
+
+<h3>06  Make Your Career Choice</h3>
+<img src="img6.jpg" class="img1">
+<p>Finally, after doing all your research, you are probably ready to make your choice. Pick the occupation that you think will bring you the most satisfaction based on all the information you have gathered. Realize that you are allowed do-overs if you change your mind about your choice at any point in your life. Many people change their careers at least a few times.</p><br><br>
+
+<h3>07  Identify Your Goals</h3>
+<img src="img7.jpg" class="img1">
+<p>Once you make a decision, identify your long- and short-term goals. Doing this will allow you to eventually work in your chosen field. Long-term goals typically take about three to five years to reach, while you can usually fulfill a short-term goal in six months to three years.<br>
+
+Let the research you did about required education and training be your guide. If you don't have all the details, do some more research. Once you have all the information you need, set your goals. An example of a long-term goal would be completing your education and training. Short-term goals include applying to college, apprenticeships, or other training programs, and doing internships.</p><br><br>
+
+<h3>08  Write a Career Action Plan</h3>
+<img src="img8.jpg" class="img1">
+<p>Put together a career action plan, a written document that lays out all the steps you will have to take to reach your goals. Think of it as a roadmap that will take you from point A to B, and then to C and D. Write down all your short- and long-term goals and the steps you will have to take to reach each one. Include any anticipated barriers that could get in the way of achieving your goals and the ways you can overcome them.</p><br><br>
+
+</div>
+<div class="footer3" style="display: block;">
+<table style="margin-left: 60px;" >
+  <tr valign="TOP">
+    <td>
+      About<br>
+News<br>
+Blog<br>
+Contact<br>
+Terms<br>
+Privacy Policy<br>
+Refund & Cancellation<br>
+Sitemap<br>
+Partners<br>
+
+    </td>
+    <td>
+      Be an Expert<br>
+Knowledge base<br>
+Impact Stories<br>
+Exclusive Interviews<br>
+Inspirational stories<br>
+View Point<br>
+Our Experts<br>
+Career Counsellor Jobs<br>
+Post Career Counsellor Jobs<br>
+Pricing<br>
+    </td>
+    <td>
+      Psychometric Career Assessment<br>
+What to do after 10th<br>
+Choose Right Engineering Branch After 12th<br>
+Ideal Career Test<br>
+Psychometric Assessment for Vocational Careers<br>
+Commerce Career Selector<br>
+Humanities Career Selector<br>
+Professional Skill Index<br>
+Educator Professional Skill Index<sup>TM</sup><br>
+    </td>
+    <td>
+      Competitive Exam Calendars<br>
+Engineering Entrance Exam<br>
+Medical Entrance Exam<br>
+Management Entrance Exam<br>
+Law Entrance Exam<br>
+Design Entrance Exam<br>
+Mass Comm. Entrance Exam<br>
+Tourism and Hotel Management Entrance Exam<br>
+Online Courses for counsellors<br>
+Education Loan<br>
+    </td>
+    <td>
+      Career Counselling Services For school<br>
+Career Counselling Services For 9th Class<br>
+Career Counselling Services For 10th Class<br>
+Career Counselling Services For 11th Class<br>
+Career Counselling Services For 12th Class<br>
+    </td>
+   
+  </tr>
+
+</table>
+
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

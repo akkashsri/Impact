@@ -1,0 +1,27 @@
+#navbar {
+    background-color: black; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */	
+    height: 17%;
+	
+    transition: top 0.7s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    
+    
+}
+
+
+

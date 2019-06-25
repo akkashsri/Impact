@@ -1,0 +1,471 @@
+﻿<html>
+<head>
+<link rel="icon" type="image/png" href="logo.png">
+	<script src="navbar.js"></script>
+<link rel="stylesheet" type="text/css"
+href="navbar.css">
+<title>Impact-Career Counselling
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	.footer3 {
+    width: 1348px;
+    max-height: 300px;
+    background-color: grey;
+    border-top: solid 5px #ff3300;
+  }
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 9;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+  * {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0066ff;
+  color: white;
+  line-height: 30px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+   font-weight: bold;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 250px;
+  height: 30px;
+  z-index: 99;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   background-color: #0066ff;
+  z-index: 99;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width:350px;
+  padding: 10px;
+  background-color: white;
+  background-color: #0066ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 500px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+
+.in{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+a.ex1:hover, a.ex1:active {color: orange;}
+</style>
+</head>
+<body style="margin-left:0; margin-top: 9%; ">
+<div id="navbar">
+<a href="index.html" style="float:left;"><img src="images3.jpeg" style="height:75px;width:300px;"></a>	
+<div style="font-family: Verdana; font-size: 120%; float: right;">
+  <a href="index.html">Home</a>
+  <a href="guide.html">Career Guide</a>
+  <a href="parent1.html">Parents</a>
+  <a href="contact.html">Contact</a>
+  <a href="signup.html">Sign up</a>
+  <a href="test.html">Career Tests</a>
+  <a href="login.html">Login Through</a>
+</div>
+</div>
+<div id="navbar">
+<a href="index.html" style="float:left;"><img src="images3.jpeg" style="height:75px;width:300px;"></a>	
+<div style="font-family: Verdana; font-size: 120%; float: right;">
+  <a href="index.html">Home</a>
+  <a href="guide.html">Career Guide</a>
+  <a href="parent1.html">Parents</a>
+  <a href="contact.html">Contact</a>
+  <a href="signup.html">Sign up</a>
+  <a href="test.html">Career Tests</a>
+  <a href="login.html">Login Through</a>
+</div>
+</div>
+<div class="customer open-button" onclick="openForm()">&nbsp;&nbsp;Customer Support</div>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <span style="color: white;"><h1>Customer Support</h1>
+
+Please leave your details below & we'll get back. Meanwhile explore our personalised Career Counselling Plans</span>
+<input type="text" name="name" required placeholder="*Name" class="in">
+<input type="text" name="email" required placeholder="*Email"  class="in">
+    <textarea placeholder="*Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div style="margin-left:10%;">
+<h1 style="font-family:courier">Find a fulfilling career<br>that does good<br></h1>
+<p style="font-size:18">This free guide is based on five years of research alongside<br>academics at oxford.<br>
+<b>Recieve one part in your inbox each week.</b>There are 12 key parts,<br>each of which will take about 15 minutes.</p>
+<input type="text" placeholder="Email address" style="height:5%;width:20%"><input type="button" value="GET IT" style="background-color:skyblue;height:5%;width:11%" >
+<p>Or scroll down to see a summary and start.</p>
+<hr></hr>
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspIntroduction:<br>
+<span style="font-size:35">&nbsp&nbsp&nbsp&nbspWhy read this guide?</span><br>
+<b>&nbsp&nbsp&nbsp&nbspAnswer:</b>You have 80,000 hours in your career.That's a damn long time.<br>
+&nbsp&nbsp&nbsp&nbspSpend one or two of those hours on this guide,and work out how  to use<br>&nbsp&nbsp&nbsp&nbspthe rest.<br>
+&nbsp&nbsp&nbsp&nbspYou can recieve the guide in <span style="color:skyblue">our newsletter</span>,in a summary series of <span style="color:skyblue">video<br>
+&nbsp&nbsp&nbsp&nbsplectures</span>,or as <span style="color:skyblue">a book. Or you can read it all online right here for free.<br>
+&nbsp&nbsp&nbsp&nbsp<input type="button" value="START NOW" style="background-color:skyblue;height:5%;width:20%">
+<br><br></p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPART 1:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhat makes for a dream job?</span><br>&nbsp&nbsp&nbsp&nbsp
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Research shows that to have a fulfilling career, you should do<br>&nbsp&nbsp&nbsp&nbspsomething you’re good at that makes the world a better place. Don’t aim<br>&nbsp&nbsp&nbsp&nbspfor a highly paid, easy job, or expect to discover your “passion” in a flash<br>&nbsp&nbsp&nbsp&nbspof insight.<br>
+<br>&nbsp&nbsp&nbsp&nbspFind out the six key ingskyblueients of fulfilling work:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 2:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspHow much difference can one person make?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Many common ways to do good, such as becoming a doctor,<br>&nbsp&nbsp&nbsp&nbsp have less impact than you might first think. Other, more unconventional<br>&nbsp&nbsp&nbsp&nbsp options, have allowed certain people to achieve an extraordinary impact<br>&nbsp&nbsp&nbsp&nbsp (including one particular Lieutenant Colonel in the Soviet military).
+<br>
+<br>&nbsp&nbsp&nbsp&nbspFind out why your choice of career really matters for the world:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 3:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspCan you change the world without changing &nbsp&nbsp&nbsp&nbspjob?</span></span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> With the right approach, you can make a major difference to the<br>&nbsp&nbsp&nbsp&nbsp lives of others without changing job, or making a major sacrifice. You can<br>&nbsp&nbsp&nbsp&nbsp do this by giving 10% of your income to the world’s poorest people,<br>&nbsp&nbsp&nbsp&nbsp promoting important causes, or assisting others in having an impact.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn about three ways to make a difference in any job:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 4:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhere should you focus to have the most &nbsp&nbsp&nbsp&nbspimpact?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> To maximise your impact, work on areas (1) that are large in scale,<br>&nbsp&nbsp&nbsp&nbsp (2) that others neglect, and (3) where it’s possible to make progress. Many<br>&nbsp&nbsp&nbsp&nbsp people fail to compare the scale of different problems, work on the same<br>&nbsp&nbsp&nbsp&nbsp problems as everyone else, and support programmes with no evidence of<br>&nbsp&nbsp&nbsp&nbsp impact.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn how to compare global problems:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 5:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhat’s the biggest and most urgent problem &nbsp&nbsp&nbsp&nbsp&nbsp in the world?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Most people in rich countries who aim to do good work on<br>&nbsp&nbsp&nbsp&nbsp health, poverty and education in their home country. But health in poor<br>&nbsp&nbsp&nbsp&nbsp countries is a bigger, more solvable problem, and only receives 4% of<br>&nbsp&nbsp&nbsp&nbsp charitable donations. Others work on climate change, but pandemics pose<br>&nbsp&nbsp&nbsp&nbsp a similar threat, and are over ten times more neglected.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspFind out what we’ve learned about the world’s most urgent problems:
+
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+&nbsp&nbsp&nbsp&nbspYou can also use our problem tool to get personalised recommendations.<br>&nbsp&nbsp&nbsp&nbsp It only takes 5 minutes:
+<br><br>&nbsp&nbsp&nbsp&nbsp<input type="button" value="TAKE THE QUIZ" style="height:5%;width:25%;background-color:white;font-weight:bold"><br><br>
+
+<br>&nbsp&nbsp&nbsp&nbspIf you’re already interested in a specific area, see all our problem profiles.
+<br><br>
+</p>
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 6:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhich jobs help people the most?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> When we think of jobs that help people, medicine, teaching and<br>&nbsp&nbsp&nbsp&nbsp charity work are what first come to mind. But these are not always the<br>&nbsp&nbsp&nbsp&nbsp highest-impact options. To help the most people: (1) focus on the most<br>&nbsp&nbsp&nbsp&nbsp pressing problems; (2) choose the best method for working on the<br>&nbsp&nbsp&nbsp&nbsp problem, considering research, advocacy and donating to charity, as well<br>&nbsp&nbsp&nbsp&nbsp as direct work; and (3) do something with excellent personal fit and job<br>&nbsp&nbsp&nbsp&nbsp satisfaction.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn about the four main types of high-impact career:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+
+<br>&nbsp&nbsp&nbsp&nbspIf you’re already interested in a specific area, see all our career reviews.
+<br><br>
+</p>
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 7:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhich jobs put you in the best position for the &nbsp&nbsp&nbsp&nbspfuture?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Especially early in your career, take options that will give you<br>&nbsp&nbsp&nbsp&nbsp flexible career capital – skills, connections and cskyblueentials that will be<br>&nbsp&nbsp&nbsp&nbsp useful in many different jobs. Examples include mathematical graduate<br>&nbsp&nbsp&nbsp&nbsp studies, consulting, and learning to program. Be careful with humanities<br>&nbsp&nbsp&nbsp&nbsp PhDs, charity jobs and vocational qualifications.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspGet a list of ways to put yourself in a better position:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 8:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhat’s the right career for you?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Don’t expect to figure out what you’re best at right away. Instead,<br>&nbsp&nbsp&nbsp&nbsp go investigate: speak to people to learn more, and try out your best<br>&nbsp&nbsp&nbsp&nbsp options. Then, to avoid common decision-making mistakes, use a<br>&nbsp&nbsp&nbsp&nbsp systematic process to make your final decision.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn how to narrow down your options:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 9:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspHow can you be more successful in your &nbsp&nbsp&nbsp&nbspcurrent job?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> There’s a lot that anyone can do to be more productive, impactful<br>&nbsp&nbsp&nbsp&nbsp and happy in any career. Some of it is common sense, but people often<br>&nbsp&nbsp&nbsp&nbsp don’t take simple steps such as prioritising their mental health, learning<br>&nbsp&nbsp&nbsp&nbsp how to learn, investing in their productivity, figuring out how to think better,<br>&nbsp&nbsp&nbsp&nbsp and otherwise improving the way they work.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspSee 15 evidence-based ways to be more successful:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 10:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspHow should you plan your career?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Rather than try to pinpoint the single best option, accept that your<br>&nbsp&nbsp&nbsp&nbsp plan is likely to change. Write out a flexible road map, which includes<br>&nbsp&nbsp&nbsp&nbsp nearby alternative options and a backup if things don’t work out as<br>&nbsp&nbsp&nbsp&nbsp expected.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn how to make a flexible A/B/Z career plan:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 11:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhat’s the best way to get a job?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Don’t just send out your CV in response to job listings. Get leads<br>&nbsp&nbsp&nbsp&nbsp through your connections, and prove that you can do the work by actually<br>&nbsp&nbsp&nbsp&nbsp doing some. When you get an offer, negotiate.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspSee our summary of all the best advice on how to get the job you want:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspPart 12:
+<span style="font-size:35"><br>&nbsp&nbsp&nbsp&nbspWhat’s the best way to gain connections?</span>
+<br><b>&nbsp&nbsp&nbsp&nbspAnswer:</b> Join a community of people working in the same area as you.<br>&nbsp&nbsp&nbsp&nbsp You’ll get hundskyblues of connections at once. We’ve seen hundskyblues of<br>&nbsp&nbsp&nbsp&nbsp people become far more motivated, altruistic and successful by getting<br>&nbsp&nbsp&nbsp&nbsp involved in our community of effective altruists.
+<br>
+<br>&nbsp&nbsp&nbsp&nbspLearn about how our community can help and why to get involved:
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<p style="background-color:#F0F0F0;font-size:18;margin-right:42%;margin-top:2%"><br>&nbsp&nbsp&nbsp&nbspThe end:
+<br>&nbsp&nbsp&nbsp&nbsp<span style="font-size:35">A cheery final note – imagining your deathbed</span>
+<br>&nbsp&nbsp&nbsp&nbspWe sum up the whole guide in one minute.<br>
+<br><br>&nbsp&nbsp&nbsp&nbsp<a href=""><input type="button" value="LEARN MORE" style="height:5%;width:20%;background-color:white;font-weight:bold"></a><br><br>
+</p>
+
+<div style="position:fixed;top:20%;right:0%;font-size:22">
+<p><b style="font-size:26">Tell your friends about this...</b><br>You probably know someone who<br>would really appreciate the tip.
+</p>
+</div>
+
+</div>
+<div class="footer3" style="display: block;">
+<table style="margin-left: 60px;" >
+  <tr valign="TOP">
+    <td>
+      About<br>
+News<br>
+Blog<br>
+Contact<br>
+Terms<br>
+Privacy Policy<br>
+Refund & Cancellation<br>
+Sitemap<br>
+Partners<br>
+
+    </td>
+    <td>
+      Be an Expert<br>
+Knowledge base<br>
+Impact Stories<br>
+Exclusive Interviews<br>
+Inspirational stories<br>
+View Point<br>
+Our Experts<br>
+Career Counsellor Jobs<br>
+Post Career Counsellor Jobs<br>
+Pricing<br>
+    </td>
+    <td>
+      Psychometric Career Assessment<br>
+What to do after 10th<br>
+Choose Right Engineering Branch After 12th<br>
+Ideal Career Test<br>
+Psychometric Assessment for Vocational Careers<br>
+Commerce Career Selector<br>
+Humanities Career Selector<br>
+Professional Skill Index<br>
+Educator Professional Skill Index<sup>TM</sup><br>
+    </td>
+    <td>
+      Competitive Exam Calendars<br>
+Engineering Entrance Exam<br>
+Medical Entrance Exam<br>
+Management Entrance Exam<br>
+Law Entrance Exam<br>
+Design Entrance Exam<br>
+Mass Comm. Entrance Exam<br>
+Tourism and Hotel Management Entrance Exam<br>
+Online Courses for counsellors<br>
+Education Loan<br>
+    </td>
+    <td>
+      Career Counselling Services For school<br>
+Career Counselling Services For 9th Class<br>
+Career Counselling Services For 10th Class<br>
+Career Counselling Services For 11th Class<br>
+Career Counselling Services For 12th Class<br>
+    </td>
+   
+  </tr>
+
+</table>
+
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

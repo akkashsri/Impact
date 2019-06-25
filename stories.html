@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="logo.png">
+	<script src="navbar.js"></script>
+<link rel="stylesheet" type="text/css"
+href="navbar.css">
+<title>Impact-Career Counselling
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	.footer3 {
+    width: 1348px;
+    max-height: 300px;
+    background-color: grey;
+    border-top: solid 5px #ff3300;
+  }
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 9;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+   border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: orange;
+html{
+  scroll-behavior: smooth;
+}
+
+   * {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0066ff;
+  color: white;
+  line-height: 30px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+   font-weight: bold;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 250px;
+  height: 30px;
+  z-index: 99;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   background-color: #0066ff;
+  z-index: 99;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width:350px;
+  padding: 10px;
+  background-color: white;
+  background-color: #0066ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 500px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+
+.in{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+a.ex1:hover, a.ex1:active {color: orange;}
+</style>
+</head>
+<body style="margin-left:0; margin-top: 9%; ">
+<div id="navbar">
+<a href="index.html" style="float:left;"><img src="images3.jpeg" style="height:75px;width:300px;"></a>	
+<div style="font-family: Verdana; font-size: 120%; float: right;">
+  <a href="index.html">Home</a>
+  <a href="guide.html">Career Guide</a>
+  <a href="parent1.html">Parents</a>
+  <a href="contact.html">Contact</a>
+  <a href="signup.html">Sign up</a>
+  <a href="test.html">Career Tests</a>
+  <a href="login.html">Login Through</a>
+</div>
+</div>
+  
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div style="margin-left: 10%">
+	<h1 style="margin-left: 30%; text-shadow: 2px 2px 5px yellow; font-size: 45px; font-family: times new roman;"><u>IMPACT STORIES</u></h1>
+<table width="1000px" cellspacing="40">
+	<tr valign="top">
+		<td><img src="30eb8299-8804-400b-9cbf-678a637a387a-1.jpg" height="200px" width="200px" class="img2"> </td>
+		<td><h3>For Jahnvi, selecting a career was not difficult but understanding it professionally was her need of the hour</h3>
+by Aakanksha Aggarwal | Impact Stories<br>
+
+CareerGuide.com talked with Jahnvi Motani who took career counselling when she was in 10th grade. Jahnvi has been a bright...</td>
+	</tr>
+	<tr valign="top">
+		<td><img src="Aparna-1080x675.png" height="200px" width="200px" class="img2"> </td>
+		<td><h3>How career guidance shaped Aparna's journey from a small town to reaching one of the best management courses from BIT Mesra</h3>
+by Aakanksha Aggarwal | Impact Stories<br>
+
+There are millions of students studying in tier-2, tier-3 and smaller towns and cities who have no access to any...</td>
+	</tr>
+	<tr valign="top">
+		<td><img src="Aakar-1.png" height="200px" width="200px" class="img2"> </td>
+		<td><h3> How Career Guidance Helped Aakar to Move From Being a Struggling Accounts Aspirant to a Successful Finance Journalist</h3>
+by Aakanksha Aggarwal | Impact Stories<br>
+
+"CareerGuide.com gave me genuine career advice without pushing me towards any specific career field."" Aakar Rastogi media and journalism Have...</td>
+	</tr>
+	<tr valign="top">
+		<td><img src="slide38.jpg" height="200px" width="200px" class="img2"> </td>
+		<td><h3>Career Guidance have placed Aman at right place with right course, he is making his career in non-conventional field</h3>
+by CareerGuide | Impact Stories<br>
+
+Career Guidance has placed me at the right place with the right course, making my career in non-conventional field Aman...</td>
+	</tr>
+	<tr valign="top">
+		<td><img src="career-counselling-impact-story-ayushi-1-638.jpg" height="200px" width="200px" class="img2"> </td>
+		<td><h3>Early Career Planning have provided confidence & focus to Ms. Neelam's daughter in class 10th</h3>
+by CareerGuide | Impact Stories<br>
+
+Early Career Planning have provided confidence & focus to my daughter in class 10th. Neelam Mandal Ayushi's Mother, Rourkela Ms....</td>
+	</tr>
+	<tr valign="top">
+		<td><img src="career-counselling-impact-story-gowrang-1-638.jpg" height="200px" width="200px" class="img2"> </td>
+		<td><h3>Healthcare management will give Gowrang a better insight into his family business, he explored this with his career guide</h3>
+by CareerGuide | Impact Stories<br>
+
+Healthcare management will give me a better insight into my family business, I explored this with my career guide Gowrang...</td>
+	</tr>
+</table></div>
+<div class="footer3" style="display: block;">
+<table style="margin-left: 60px;" >
+  <tr valign="TOP">
+    <td>
+      About<br>
+News<br>
+Blog<br>
+Contact<br>
+Terms<br>
+Privacy Policy<br>
+Refund & Cancellation<br>
+Sitemap<br>
+Partners<br>
+
+    </td>
+    <td>
+      Be an Expert<br>
+Knowledge base<br>
+Impact Stories<br>
+Exclusive Interviews<br>
+Inspirational stories<br>
+View Point<br>
+Our Experts<br>
+Career Counsellor Jobs<br>
+Post Career Counsellor Jobs<br>
+Pricing<br>
+    </td>
+    <td>
+      Psychometric Career Assessment<br>
+What to do after 10th<br>
+Choose Right Engineering Branch After 12th<br>
+Ideal Career Test<br>
+Psychometric Assessment for Vocational Careers<br>
+Commerce Career Selector<br>
+Humanities Career Selector<br>
+Professional Skill Index<br>
+Educator Professional Skill Index<sup>TM</sup><br>
+    </td>
+    <td>
+      Competitive Exam Calendars<br>
+Engineering Entrance Exam<br>
+Medical Entrance Exam<br>
+Management Entrance Exam<br>
+Law Entrance Exam<br>
+Design Entrance Exam<br>
+Mass Comm. Entrance Exam<br>
+Tourism and Hotel Management Entrance Exam<br>
+Online Courses for counsellors<br>
+Education Loan<br>
+    </td>
+    <td>
+      Career Counselling Services For school<br>
+Career Counselling Services For 9th Class<br>
+Career Counselling Services For 10th Class<br>
+Career Counselling Services For 11th Class<br>
+Career Counselling Services For 12th Class<br>
+    </td>
+   
+  </tr>
+
+</table>
+
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

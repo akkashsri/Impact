@@ -1,0 +1,482 @@
+<html>
+<head><script src="navbar.js"></script>
+	<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<title>Impact-Career Counselling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+.contentt{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1350px;
+  
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+      
+
+.footer3 {
+    width: 1348px;
+    background-color: grey;
+    border-top: solid 5px #ff3300;
+  }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 9;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px; 
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+  * {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0066ff;
+  color: white;
+  line-height: 30px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+   font-weight: bold;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 250px;
+  height: 30px;
+  z-index: 99;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   background-color: #0066ff;
+  z-index: 99;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width:350px;
+  padding: 10px;
+  background-color: white;
+  background-color: #0066ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 500px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+
+.in{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: groove;
+  background: #f1f1f1;
+  resize: none;
+  min-height:0px;
+  border-radius: 10px;
+}
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+a.ex1:hover, a.ex1:active {color: orange;}
+</style>
+
+  
+</head>
+<body style="margin-left:0; margin-top: 7%; background-image: url('bg.jpg'); background-size: cover;"  >
+  <div class="customer open-button" onclick="openForm()">&nbsp;&nbsp;Customer Support</div>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <span style="color: white;"><h1>Customer Support</h1>
+
+Please leave your details below & we'll get back. Meanwhile explore our personalised Career Counselling Plans</span>
+<input type="text" name="name" required placeholder="*Name" class="in">
+<input type="text" name="email" required placeholder="*Email"  class="in">
+    <textarea placeholder="*Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div id="navbar">
+<a href="index.html" style="float:left;"><img src="images3.jpeg" style="height:60px; width:300px;"></a>
+<div style="font-family: Verdana; font-size: 120%; float: right;" >
+  <a href="index.html" class="ex1">Home</a>
+  <a href="guide.html">Career Guide</a>
+  <a href="parent1.html" class="ex1">Parents</a>
+  <a href="contact.html" class="ex1">Contact</a>
+  <a href="signup.html" class="ex1">Sign up</a>
+  <a href="test.html" class="ex1">Career Tests</a>
+  <a href="login.html" class="ex1">Login Through</a>
+</div>
+</div><a name="aname">
+<div>
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="s1.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s2.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s3.png" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s4.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s5.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s6.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s7.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s8.jpg" style="width:1350px; height: 600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="s9.jpg" style="width:1350px; height: 600px;">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+</div>
+<div class="contentt">
+<font face="Verdana" color="black">
+  <center><font  color="black" size="6" ><u><b>What to Do after 12th?</b></u></font></center>
+  <font  color="black" size="4"><p>Believe it or not but the Indian education system can be very intimidating. There is an endless wave of competition and everyone is in the rat race to become the next C.V. Raman, Amartya Sen or R.K. Narayan. Do you remember the time you cleared the 10th standard exams? Remember, how everyone gathered up to question and confuse you about your future? Kudos! For you made your way through it! Now that you're planning to cross the next milestone, class 12th, we are sure that you are looking for clarity. If you don't have correct information regarding it, you might end up in a misfit career and may feel unsatisfied with your biggest achievements.</p>
+
+<p> A leading career counselling institute in Delhi understands the importance of career guidance after 12th and provides you with the best career counselling services in India. If you're still thinking what to do after 12th, iDreamCareer.com is here to help you. Firstly, let's know more about your career options after class 12th:</p>
+
+<h4><font color="black"><b><a href="studyabroad.html">1.Continue with your existing stream and go for higher studies :</a></b></font></h4>
+<p>If you have interest in a particular stream or a subject and have been performing well in the same, it might be the right career option after 12th. In order to make the best of the opportunities your way, we suggest you avail help from a career guide to understand the latest career trends related to it.</p>
+
+<h4><font color="black"><b><a href="test.html">2.Take Entrance Examinations :</a></b></font></h4>
+<p>You can also sit for entrance exams related to your chosen stream. Every year students prepare diligently to crack these exams. Most reputed colleges offering a plethora of courses after 12th have also adopted the trend of taking entrance tests. It helps them to regulate their admission procedure given a large number of applicants every year and only admit deserving candidates. As many of these entrance examinations are scheduled at different times of the year, a career guide after 12th can really help you in stay prepared and updated with the exam schedule.</p>
+
+<h4><font color="black"><b><a href="course.html">3.Switch to a New Stream and Go for Higher Education :</a></b></font></h4>
+<p>Many times, our personal choices may not turn out to be a good professional choice. Depending on your aptitude and personal interest, you can pick a different course after 12th and have a bright career. Just be careful while applying for a course as many colleges prefer students with strong background in individual subjects.</p></font>
+
+<font face="Verdana" color="red" size="5px"><a href="course.html" style="text-decoration: none; color: inherit; background-color: red"><b>
+<center>But,Which Course Should I Choose??</center></b></a></font>
+<a href="stories.html" style="text-decoration: none; color: red; background-color: red"><b>
+<center>Know About Impact Stories...</center></b></a></font>
+</div><br><br>
+<div class="footer3" style="display: block;">
+<table style="margin-left: 60px; font-size: medium;" cellspacing="5" >
+  <tr valign="TOP">
+    <td>
+      About<br>
+News<br>
+Blog<br>
+Contact<br>
+Terms<br>
+Privacy Policy<br>
+Refund & Cancellation<br>
+Sitemap<br>
+Partners<br>
+
+    </td>
+    <td>
+      Be an Expert<br>
+Knowledge base<br>
+Impact Stories<br>
+Exclusive Interviews<br>
+Inspirational stories<br>
+View Point<br>
+Our Experts<br>
+Career Counsellor Jobs<br>
+Post Career Counsellor Jobs<br>
+Pricing<br>
+    </td>
+    <td>
+      Psychometric Career Assessment<br>
+What to do after 10th<br>
+Choose Right Engineering Branch After 12th<br>
+Ideal Career Test<br>
+Psychometric Assessment for Vocational Careers<br>
+Commerce Career Selector<br>
+Humanities Career Selector<br>
+Professional Skill Index<br>
+Educator Professional Skill Index<sup>TM</sup><br>
+    </td>
+    <td>
+      Competitive Exam Calendars<br>
+Engineering Entrance Exam<br>
+Medical Entrance Exam<br>
+Management Entrance Exam<br>
+Law Entrance Exam<br>
+Design Entrance Exam<br>
+Mass Comm. Entrance Exam<br>
+Tourism and Hotel Management Entrance Exam<br>
+Online Courses for counsellors<br>
+Education Loan<br>
+    </td>
+    <td>
+      Career Counselling Services For school<br>
+Career Counselling Services For 9th Class<br>
+Career Counselling Services For 10th Class<br>
+Career Counselling Services For 11th Class<br>
+Career Counselling Services For 12th Class<br>
+    </td>
+   
+  </tr>
+
+</table>
+
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+
+</div>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
